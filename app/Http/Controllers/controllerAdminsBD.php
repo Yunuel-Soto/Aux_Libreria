@@ -26,8 +26,10 @@ class controllerAdminsBD extends Controller
                 session_start();
 
                 $_SESSION['nombre'] = $datoC->nombre;
-
+                $_SESSION['clave_id'] = $datoC->clave_id;
+                $_SESSION['estado'] = $datoC->estado;
             }
+
             DB::table('tb_biblioteca_personal')->update([
                 "Fecha_actual" => Carbon::now(),
             ]);
@@ -40,9 +42,11 @@ class controllerAdminsBD extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function settings($id)
     {
-        //
+        $datosUs = DB::table('tb_admins')->where('clave_id', $id)->first();
+
+        return view('editSelect', compact('id', 'datosUs'));
     }
 
     /**
@@ -73,6 +77,7 @@ class controllerAdminsBD extends Controller
                 "correo" => $req->input('correo'),
                 "no_telefono" => $req->input('no_telefono'),
                 "contraseña" => $req->input('contraseña'),
+                "estado" => "blanco",
                 "fecha_registro" => Carbon::now()
             ]);
             return redirect('Login.Admins')->with('guardado', 'abc');
@@ -82,9 +87,31 @@ class controllerAdminsBD extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function settingsStore(Request $req, $clave_id)
     {
-        //
+        $nombre = $req->input("nombre");
+        $apellidos = $req->input("apellidos");
+        $telefono = $req->input("no_telefono");
+        $correo = $req->input("correo");
+        $estado = $req->input("estado");
+        $password = $req->input("password");
+
+        if($nombre == '' || $correo == '' || $password == '' || $telefono == '' || $apellidos == '' ){
+            return redirect()->route('sett', $clave_id)->with('noGuardado', 'abc');
+        } else {
+
+            DB::table('tb_admins')->where('clave_id', $clave_id)->update([
+                "nombre" => $nombre,
+                "apellido" => $apellidos,
+                "no_telefono" => $telefono,
+                "correo" => $correo,
+                "estado" => $estado,
+                "contraseña" => $password,
+            ]);
+            return redirect()->route('LogAdmins', $clave_id)->with('guardados', 'abc');
+        }
+
+
     }
 
     /**

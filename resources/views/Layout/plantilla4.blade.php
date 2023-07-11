@@ -18,14 +18,21 @@ session_start();
     <link rel="stylesheet" href="./style/style.css">
     <link rel="shortcut icon" href="./img/libro.png" />
     <script defer src="./js/app.js"></script>
+    <script defer src="./js/settingsInicio.js"></script>
+    <script defer src="./js/settingsALibros.js"></script>
+    <script defer src="./js/settingsCLibros.js"></script>
+    <script defer src="./js/settingsAlumno.js"></script>
+    <script defer src="./js/settingsEditA.js"></script>
 
     <title>@yield('titulo_documento')</title>
 </head>
 
 {{-- PARA EL CONTENIDO EN GENERAL (ADMINS) --}}
 
-<body class="cuerpo oscuro">
+<body class="cuerpo">
     <header class="cont-barra">
+        <input id="colorIn" name="estado" type="text" value="{{ $_SESSION['estado'] }}" hidden>
+
         <ul class="nvar1">
             <li class="li-img"><img src="./img/add-alt.png" alt="" class="imgplus plus"><a
                     href="{{ route('main2') }}" class="a-cont efecto">Libros</a>
@@ -48,10 +55,12 @@ session_start();
                 <div class="div-lin"></div>
             </a>
             <ul class="contenedirDROP dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item li-drop" href="#"><img src="/img/usuario.png" alt="">
+                <li><a href="{{ route('main2') }}" class="dropdown-item li-drop" href="#"><img
+                            src="/img/usuario.png" alt="">
                         {{ $_SESSION['nombre'] }}</a></li>
-                <li><a class="dropdown-item li-drop" href="#"><img src="/img/engranaje.png" alt="">
-                        Editar</a></li>
+                <li><a class="dropdown-item li-drop" href="{{ route('sett', $_SESSION['clave_id']) }}"><img
+                            src="/img/engranaje.png" alt="">
+                        Configuraciónes</a></li>
                 <li><a class="dropdown-item li-drop" href="{{ route('open') }}"><img src="/img/cerrar-sesion.png"
                             alt="">
                         Salir</a></li>

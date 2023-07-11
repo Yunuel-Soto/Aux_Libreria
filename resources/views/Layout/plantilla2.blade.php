@@ -13,6 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="shortcut icon" href="./img/libro.png" />
+
     <title>@yield('titulo_documento')</title>
 </head>
 

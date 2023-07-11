@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('no_telefono');
             $table->string('correo');
             $table->string('contraseña');
+            $table->string("estado")->nullable();
             $table->date('fecha_registro');
             $table->timestamps();
         });

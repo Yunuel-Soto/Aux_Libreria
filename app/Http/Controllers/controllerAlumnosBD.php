@@ -28,6 +28,8 @@ class controllerAlumnosBD extends Controller
 
                 $_SESSION['matricula'] = $usu->Matricula;
                 $_SESSION['nombre'] = $usu->nombre;
+                $_SESSION['estado'] = $usu->estado;
+
             }
         // Actualizamos la fecha actual cuando se corrobora el usuario en todos los registros
         // de la biblioteca personal
@@ -56,11 +58,23 @@ class controllerAlumnosBD extends Controller
         }
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+    public function settingsA($id)
     {
+        $datosUs = DB::table('tb_alumnos')->where('matricula', $id)->first();
+
+        return view('editSelectAlumno', compact('id', 'datosUs'));
+    }
+
+    public function settingsStoreA(Request $req, $matricula)
+    {
+
+        $estado = $req->input("estado");
+
+        DB::table('tb_alumnos')->where('matricula', $matricula)->update([
+            "estado" => $estado,
+        ]);
+        return redirect()->route('LogAlumnos', $matricula)->with('guardados', 'abc');
+
 
     }
 

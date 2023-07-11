@@ -1,0 +1,55 @@
+// INSERT LIBROS
+
+INSERT INTO `tb_libros`(`id_libro`, `titulo`, `edicion`, `editorial`, `carrera`, `autor`, `tipo`, `cantidad`, `imagen`, `disponibles`, `fecha_registro`) VALUES ('2','Administracion y organizacion','3ra Edicion','CENGAGE','Licenciatura en Administracion y Gestion de Empresas','Lydia Arbaiza Fermini','administrativo y de gestion','5','administracion2.jpg','5','2023-06-26')
+
+INSERT INTO `tb_libros`(`id_libro`, `titulo`, `edicion`, `editorial`, `carrera`, `autor`, `tipo`, `cantidad`, `imagen`, `disponibles`, `fecha_registro`) VALUES ('3','Organización industrial','2ra Edicion','Pearson','Licenciatura en Administracion y Gestion de Empresas','Jorge Taarziján, Ricardo Peredes','organización para la estrategia empresarial','3','administracion3.jpg','3','2023-06-26')
+
+INSERT INTO `tb_libros`(`id_libro`, `titulo`, `edicion`, `editorial`, `carrera`, `autor`, `tipo`, `cantidad`, `imagen`, `disponibles`, `fecha_registro`) VALUES ('4','Ingeniería Automóvil','Estandar','Real Sociedad de Ingenieros del Automovil','Ingenieria en Tecnologia Automotriz','Real sociedad de ingenieros del autmóvil','Automovil e ingenieria','4','automotriz.jpg','4','2023-06-26')
+
+INSERT INTO `tb_libros`(`id_libro`, `titulo`, `edicion`, `editorial`, `carrera`, `autor`, `tipo`, `cantidad`, `imagen`, `disponibles`, `fecha_registro`) VALUES ('5','Autodesk Inventor2013','Professional','CAMCA','Ingenieria en Tecnologia Automotriz','Michele David da Cruz','autodesk inventor','7','automotriz2.jpg','7','2023-06-27')
+
+INSERT INTO `tb_libros`(`id_libro`, `titulo`, `edicion`, `editorial`, `carrera`, `autor`, `tipo`, `cantidad`, `imagen`, `disponibles`, `fecha_registro`) VALUES ('6','Mecanica vectorial para ingenieros','Estandar','McBook','Ingenieria en Tecnologia Automotriz','Jhonson','calculo, estatica, vectorial','10','automotriz3.jpg','10','2023-06-27')
+
+INSERT INTO `tb_libros`(`id_libro`, `titulo`, `edicion`, `editorial`, `carrera`, `autor`, `tipo`, `cantidad`, `imagen`, `disponibles`, `fecha_registro`) VALUES ('7','Negocios internacionales Fundamentos y estrategias','1ra Edicion','ECOE','Licenciatura en Negocios Internacionales','Jahir Lombana Coy(editor), Silvia Rozas Gutierrez y otros','negocios fundamentos y estrategias','5','internacionales.jpg','5','2023-06-27')
+
+INSERT INTO `tb_libros`(`id_libro`, `titulo`, `edicion`, `editorial`, `carrera`, `autor`, `tipo`, `cantidad`, `imagen`, `disponibles`, `fecha_registro`) VALUES ('8','Negocios internacionales Ambientes y Operaciones','15ta edicion','Pearson','Licenciatura en Negocios Internacionales','Daniels Radebaigh Sullivan','ambiental y de operaciones','5','internacionales2.jpg','5','2023-06-27')
+
+INSERT INTO `tb_libros`(`id_libro`, `titulo`, `edicion`, `editorial`, `carrera`, `autor`, `tipo`, `cantidad`, `imagen`, `disponibles`, `fecha_registro`) VALUES ('9',' Breve historia de la euforia financiera ','Estandar','Ariel',' Licenciatura en Negocios Internacionales','John Kenneth Galbraith','Historico, finanzas','7','internacionales3.jpg','7','2023-06-27')
+
+INSERT INTO `tb_libros`(`id_libro`, `titulo`, `edicion`, `editorial`, `carrera`, `autor`, `tipo`, `cantidad`, `imagen`, `disponibles`, `fecha_registro`) VALUES ('10',' Fundamentos de manufactura moderna','3ra edicion','Mc Books',' Ingenieria en Tecnologia en Manufactura','Mikell P. Groover','Fundamentos de manufactura','10','manufactura2.jpg','10','2023-06-27')
+
+INSERT INTO `tb_libros`(`id_libro`, `titulo`, `edicion`, `editorial`, `carrera`, `autor`, `tipo`, `cantidad`, `imagen`, `disponibles`, `fecha_registro`) VALUES ('11',' Manual de Buenas practicas de manufactura','2da edicion','InocuA',' Ingenieria en Tecnologia en Manufactura',' Dr. Ibo Silvia Jaimes, Ing. Victor Hugo Meneses Taboada','Buenas practicas en manufactura','6','manufactura3.jpg','6','2023-06-27')
+
+INSERT INTO `tb_libros`(`id_libro`, `titulo`, `edicion`, `editorial`, `carrera`, `autor`, `tipo`, `cantidad`, `imagen`, `disponibles`, `fecha_registro`) VALUES ('12',' Manufactura, ingenieria y tecnologia','1ra edicion','Pearson',' Ingenieria en Tecnologia en Manufactura','Serope Kalpakjian, Steven R. Schmid','manufactura, ingeniería y tecnología','6','manufactura.png','6','2023-06-27')
+
+`tb_libros`(`id_libro`, `titulo`, `edicion`, `editorial`, `carrera`, `autor`, `tipo`, `cantidad`, `imagen`, `disponibles`, `fecha_registro`) VALUES ('13','Fundamentos de manufactura moderna','3ra Edicion','Mc Books','Ingenieria en Tecnologia en Manufactura','Mikelt P. Groover','Fundamentos, manufactura y teorico','5','manufactura2.jpg','5','2023-07-10')
+
+INSERT INTO `tb_libros`(`id_libro`, `titulo`, `edicion`, `editorial`, `carrera`, `autor`, `tipo`, `cantidad`, `imagen`, `disponibles`, `fecha_registro`) VALUES (`14`, `Manual de buenas practicas de manufactura`, `Estandar`, `InocuA`, `Ingenieria en Tecnologia en Manufactura`, `Dr. Ibo Silvia Jaimes, Ing. Victor Hugo Meneses Taboada`, `Manual teorico practico`, `6`, `manufactura3.png`, `6`, `2023-06-27`)
+
+INSERT INTO `tb_libros`(`id_libro`, `titulo`, `edicion`, `editorial`, `carrera`, `autor`, `tipo`, `cantidad`, `imagen`, `disponibles`, `fecha_registro`) VALUES ('7','titulo','edicion','editorial','carrera','autor','tipo','cantidad','internacionales.jpg','cantidad','2023-06-27')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

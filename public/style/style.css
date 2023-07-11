@@ -24,6 +24,14 @@ body {
     justify-content: space-between;
     min-width: 35%;
 }
+.nvar1 li {
+    /* padding-left: 1rem; */
+    padding-right: 1rem;
+}
+.nvar1 li:nth-child(1) {
+    padding-left: 0rem;
+    padding-right: 1rem;
+}
 .nvar2 {
     display: flex;
     justify-content: center;
@@ -194,34 +202,38 @@ a:hover {
 .body-forms {
     background-color: rgb(29, 143, 149);
 }
+
 .cont-form {
     display: flex;
     flex-direction: row;
     justify-content: center;
     color: rgb(255, 255, 255);
+    align-items: center;
+    height: 100%;
+    padding-top: 2.5rem;
 }
 .form-alumnos {
     display: flex;
     flex-direction: column;
     text-align: center;
     background-color: #61ced8;
-    border-radius: 10px;
+    border-radius: 25px;
     min-width: 40%;
     min-height: 1%;
-    box-shadow: 0px 0px 10px 5px white;
-    margin-top: 2%;
+    /* box-shadow: 0px 0px 10px 5px white; */
+    margin-top: 0%;
 }
 
 .h1-reg {
-    background-color: #569bab;
+    background-color: #c9e0f981;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
-    border-radius: 10px;
+    border-radius: 25px 25px 0px 0px;
     padding-top: 2%;
     padding-bottom: 2%;
 }
 .input-alumno {
-    width: 100%;
+    width: 83%;
     height: 38px;
     border-radius: 10px;
     border: #82cddd;
@@ -234,9 +246,7 @@ a:hover {
     outline: none;
     box-shadow: 0 0 10px rgb(0, 0, 0);
 }
-.rewidth {
-    width: 83%;
-}
+
 .inputsdouble {
     margin-right: 2%;
 }
@@ -292,23 +302,24 @@ a:hover {
     margin-top: 0%;
 }
 .cont-form-libros {
-    background-color: #82cddd;
+    /* background-color: #baf0fc; */
     padding-bottom: 7.2%;
 }
 .div-nombre_apellido {
+    width: 83%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding-left: 3%;
-    padding-right: 3%;
-    margin-top: 1%;
+    margin: auto;
 }
+/* .div-nombre_apellido .input-alumno:nth-child(2n) {
+    margin-left: 1rem;
+} */
+
 /* Mensajes de error */
 .p-errors {
     color: red;
     font-style: italic;
     text-align: left;
-    margin-left: 10%;
     font-size: 15px;
     margin-bottom: 0%;
 }
@@ -320,34 +331,35 @@ a:hover {
     padding: 2%;
 }
 .cont-filter {
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-    height: 40px;
+    /* width: 100%; */
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
 }
 .input-filter {
     width: 82%;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 10px 0px 0px 10px;
     border: 0px;
     padding-left: 5%;
+    padding-right: 2%;
     font-size: 19px;
 }
 .input-filter:focus {
     outline: none;
+    box-shadow: inset 0 0 10px rgb(4, 4, 4);
 }
-.cont-filter:hover {
+/* .cont-filter:hover {
     box-shadow: 0 0 10px rgb(4, 4, 4);
-}
+} */
 .btn-search {
-    border-radius: 10px;
+    border-radius: 0px 10px 10px 0px;
     height: 40px;
-    padding-right: 4.6%;
-    padding-left: 3.2%;
-    padding-top: 2.3%;
+    width: 15%;
     border: 0px;
 }
-.btn-search:hover {
+
+.btn-search:active {
     background-color: #569bab;
 }
 .cont-anclas-carreras {
@@ -372,6 +384,28 @@ a:hover {
     width: 240px;
     border-radius: 5px;
     margin: 10px;
+}
+
+.cont-cards-librosAlumno .cont-card {
+    width: 280px;
+}
+
+.cont-cards-librosAlumno .cont-info {
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+}
+.cont-cards-librosAlumno .img-portada {
+    width: 100%;
+    height: 290px;
+}
+.cont-cards-librosAlumno .cont-img {
+    width: 100%;
+    height: inherit;
+}
+.cont-cards-librosAlumno .cont-footer {
+    padding-bottom: 0.5rem;
+    padding-top: 0px;
 }
 .cont-card:hover {
     transform: scale(1.1);
@@ -795,6 +829,7 @@ a:hover {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 0.5%;
 }
 
@@ -857,7 +892,7 @@ body {
     max-height: 100%;
     overflow: hidden;
     margin: auto;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     /* background-color: #569bab; */
     /* margin-top: 1em; */
 }
@@ -877,7 +912,7 @@ body {
 }
 .carrousel .img-c {
     width: calc(100% / 4 -2em);
-    height: 65vh;
+    height: 460px;
     transition: all 0.5s ease;
     /* max-width: 45vh; */
 }
@@ -906,4 +941,116 @@ body {
 }
 .carrousel .img-c.scale {
     transform: scale(0.6);
+}
+/* SETTINGS */
+.art-info {
+    font-family: serif;
+    font-size: 1.5rem;
+    text-align: start;
+    margin: 1%;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+.parrafo1 {
+    font-size: 1.7rem;
+    text-align: center;
+}
+.input-info {
+    height: 1.6rem;
+    position: relative;
+    top: -2px;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+.input-info:nth-child(8) {
+    width: 19rem;
+}
+.art-info a {
+    color: #569bab;
+}
+.info-body .cont-barra {
+    background-color: white;
+}
+
+.info-body .nvar1 {
+    margin-left: 3rem;
+}
+.info-body .a-cont {
+    color: black;
+    margin-top: 0.1rem;
+    font-size: 2.2rem;
+}
+.div-father {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    /* position: absolute; */
+}
+.span {
+    position: relative;
+    left: 0.5rem;
+    bottom: -0.1rem;
+    background-color: #ffffff;
+    border: black solid 2px;
+    width: 3.5rem;
+    height: 1.7rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s;
+}
+.circulo {
+    background-color: rgb(0, 0, 0);
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 15px;
+}
+.cont-btn-settings {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+.btn-settings {
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 9px;
+    border: 0px solid #444e51;
+    background-color: #569bab;
+    color: white;
+    font-size: 0.95rem;
+    transition: 0.4s;
+}
+.btn-settings:hover {
+    transform: scale(1.15);
+}
+.btn-settings:active {
+    transform: scale(1);
+}
+/* MENSAJES DE ALERTA */
+.alerta-errs {
+    width: 40%;
+    /* min-height: 1rem; */
+    padding: 0.8rem;
+    padding-left: 1rem;
+    background-color: rgba(255, 255, 255, 0.819);
+    /* margin: auto; */
+    position: absolute;
+    left: 30%;
+    top: 5%;
+    color: red;
+    font-size: 20px;
+    border-radius: 12px;
+    transition: 0.5s;
+    /* border: 5px black solid; */
+}
+.alerta-errs p {
+    margin-right: 0.5%;
+}
+.alerta-errs .imagen2 {
+    position: absolute;
+    right: 2%;
+}
+.alerta-errs .imagen2:hover {
+    cursor: pointer;
 }

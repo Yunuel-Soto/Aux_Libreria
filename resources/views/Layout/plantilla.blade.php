@@ -17,6 +17,13 @@ session_start();
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <link rel="stylesheet" href="./style/style.css">
     <script defer src="./js/app.js"></script>
+    {{-- <script defer src="./js/settings.js"></script> --}}
+    <script defer src="./js/settingsInicio.js"></script>
+    <script defer src="./js/settingsALibros.js"></script>
+    <script defer src="./js/settingsCLibros.js"></script>
+    <script defer src="./js/settingsAlumno.js"></script>
+    <script defer src="./js/settingsEditA.js"></script>
+
     <link rel="shortcut icon" href="./img/libro.png" />
     <title>@yield('titulo_documento')</title>
 </head>
@@ -26,6 +33,8 @@ session_start();
 <body class="cuerpo oscuro">
 
     <header class="cont-barra">
+        <input id="colorIn" name="estado" type="text" value="{{ $_SESSION['estado'] }}" hidden>
+
         <ul class="nvar1">
             <li class="li-img"><img src="./img/add-alt.png" alt="" class="imgplus plus"><a
                     href="{{ route('main') }}" class="a-cont efecto">Libros</a>
@@ -49,7 +58,8 @@ session_start();
                             alt="">
                         {{ $_SESSION['nombre'] }}</a></li>
 
-                <li><a class="dropdown-item li-drop" href="#"><img src="/img/engranaje.png" alt="">
+                <li><a class="dropdown-item li-drop" href="{{ route('settA', $_SESSION['matricula']) }}"><img
+                            src="/img/engranaje.png" alt="">
                         Configuracion</a></li>
                 <li><a class="dropdown-item li-drop" href="{{ route('open') }}"><img src="/img/cerrar-sesion.png"
                             alt="">

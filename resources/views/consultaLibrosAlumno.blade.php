@@ -11,14 +11,14 @@
     <div class="cont-cards-librosAlumno">
         @if (count($bibliosPersonal) > 0)
             @foreach ($libros as $libro)
-                <div class="cont-card newTam-conCard">
+                <div class="cont-card">
                     <a title="Más Informacion" class="masInfo" data-bs-toggle="modal"
                         data-bs-target="#modalMasInformacionLibros{{ $libro->id_libro }}">
-                        <div class="cont-img newTam-img">
-                            <img src="/img/portadas/{{ $libro->imagen }}" alt="Portada" class="img-portada newTam-contIMG">
+                        <div class="cont-img">
+                            <img src="/img/portadas/{{ $libro->imagen }}" alt="Portada" class="img-portada">
                         </div>
                     </a>
-                    <div class="cont-info newTam-info">
+                    <div class="cont-info">
                         <p class="title">{{ $libro->titulo }}</p>
 
                         <input type="hidden" value="{{ $id_biblioPersonal = '' }}">
@@ -43,12 +43,12 @@
                         @endforeach
 
                     </div>
-                    <form class="cont-footer newTam-btn"
+                    <form class="cont-footer "
                         action="{{ route('sh.library.update', [$alumno->Matricula, $libro->id_libro]) }}" method="POST">
                         @csrf
                         @method('PUT')
                         <div class="cont-anclas-footer">
-                            <a class="a-editar"><button class="btn-entregado">Entregado</button></a>
+                            <button class="btn-entregado">Entregado</button>
                         </div>
                     </form>
                 </div>

@@ -50,10 +50,14 @@ Route::controller(controllerAlumnosBD::class)->group(function(){
     Route::get('Alumnos', 'showAlumnos')->name('alumnos.show');
     Route::PUT('Alumnos/update/{matricula}', 'update')->name('alumno.update');
     Route::delete('Alumno/delete/{matricula}', 'destroy')->name('alumno.destroy');
+    Route::get('Alumno.setting.{matricula}', 'settingsA')->name('settA');
+    Route::post('Alumno/settings/store/{matricula}', 'settingsStoreA')->name('setPostA');
 });
 Route::controller(controllerAdminsBD::class)->group(function(){
     Route::post('Admins/sesion', 'sesion')->name('Admin.sesion');
     Route::post('Admins/store', 'store')->name('Admin.store');
+    Route::get('Admins.setting.{clave_id}', 'settings')->name('sett');
+    Route::post('Admin/settings/store/{clave_id}', 'settingsStore')->name('setPost');
 });
 Route::controller(controllerBibliotecaPersonalBD::class)->group(function(){
     Route::post('agregar/store/{idlibro}/{matricula}/{busqueda}', 'store')->name('agregar.store');

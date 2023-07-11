@@ -34,18 +34,18 @@ class validateAdminsSingIn extends FormRequest
     public function messages()
     {
         return [
-            'clave_id.required' => '*Campo requerido',
-            'clave_id.min_digits' => '*La clave tiene que tener 8 numeros',
-            'nombre.required' => '*Campo requerido',
-            'apellido.required' => '*Campo requerido',
-            'no_telefono.required' => '*Campo requerido',
-            'no_telefono.min_digits' => '*Numero de telefono invalido',
-            'correo.required' => '*Campo requerido',
-            'correo.email' => '*Correo invalido',
-            'contraseña.required' => '*Campo requerido',
-            'contraseña.min' => '*La contraseña debe de tener mas de 8 caracteres',
-            'confirContra.required' => '*Campo requerido',
-            'confirContra.min' => '*La contraseña debe de tener mas de 8 caracteres'
+            'clave_id.required' => 'Clave id requerida',
+            'clave_id.min_digits' => 'La clave id tiene que tener 8 numeros',
+            'nombre.required' => 'Nombre requerido',
+            'apellido.required' => 'Apellidos requerido',
+            'no_telefono.required' => 'Numero telefonico requerido',
+            'no_telefono.min_digits' => 'Numero de telefono invalido',
+            'correo.required' => 'Rectifica tu correo',
+            'correo.email' => 'Correo requerido',
+            'contraseña.required' => 'Contraseña requerida',
+            'contraseña.min' => 'La contraseña debe de tener mas de 8 caracteres',
+            'confirContra.required' => 'Tienes que confirmar la contraseña',
+            'confirContra.min' => 'La contraseña debe de tener mas de 8 caracteres'
         ];
     }
 }

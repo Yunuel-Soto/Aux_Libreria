@@ -29,10 +29,10 @@ class validateAlumnoLogin extends FormRequest
     public function messages()
     {
         return[
-            "correo.required"=>"*El correo es requerido",
-            "correo.email"=>"*Rectifica tu correo",
-            "contraseña.required"=>"*La contraseña es requerida",
-            "contraseña.min"=>"*La contraseña debe de tener mas de 8 caracteres"
+            "correo.required"=>"El correo es requerido",
+            "correo.email"=>"Rectifica tu correo",
+            "contraseña.required"=>"La contraseña es requerida",
+            "contraseña.min"=>"La contraseña debe de tener mas de 8 caracteres"
         ];
     }
 }
