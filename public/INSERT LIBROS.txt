@@ -22,11 +22,9 @@ INSERT INTO `tb_libros`(`id_libro`, `titulo`, `edicion`, `editorial`, `carrera`,
 
 INSERT INTO `tb_libros`(`id_libro`, `titulo`, `edicion`, `editorial`, `carrera`, `autor`, `tipo`, `cantidad`, `imagen`, `disponibles`, `fecha_registro`) VALUES ('12',' Manufactura, ingenieria y tecnologia','1ra edicion','Pearson',' Ingenieria en Tecnologia en Manufactura','Serope Kalpakjian, Steven R. Schmid','manufactura, ingeniería y tecnología','6','manufactura.png','6','2023-06-27')
 
-`tb_libros`(`id_libro`, `titulo`, `edicion`, `editorial`, `carrera`, `autor`, `tipo`, `cantidad`, `imagen`, `disponibles`, `fecha_registro`) VALUES ('13','Fundamentos de manufactura moderna','3ra Edicion','Mc Books','Ingenieria en Tecnologia en Manufactura','Mikelt P. Groover','Fundamentos, manufactura y teorico','5','manufactura2.jpg','5','2023-07-10')
+INSERT INTO `tb_libros`(`id_libro`, `titulo`, `edicion`, `editorial`, `carrera`, `autor`, `tipo`, `cantidad`, `imagen`, `disponibles`, `fecha_registro`) VALUES ('13','Fundamentos de manufactura moderna','3ra Edicion','Mc Books','Ingenieria en Tecnologia en Manufactura','Mikelt P. Groover','Fundamentos, manufactura y teorico','5','manufactura2.jpg','5','2023-07-10')
 
 INSERT INTO `tb_libros`(`id_libro`, `titulo`, `edicion`, `editorial`, `carrera`, `autor`, `tipo`, `cantidad`, `imagen`, `disponibles`, `fecha_registro`) VALUES (`14`, `Manual de buenas practicas de manufactura`, `Estandar`, `InocuA`, `Ingenieria en Tecnologia en Manufactura`, `Dr. Ibo Silvia Jaimes, Ing. Victor Hugo Meneses Taboada`, `Manual teorico practico`, `6`, `manufactura3.png`, `6`, `2023-06-27`)
-
-INSERT INTO `tb_libros`(`id_libro`, `titulo`, `edicion`, `editorial`, `carrera`, `autor`, `tipo`, `cantidad`, `imagen`, `disponibles`, `fecha_registro`) VALUES ('7','titulo','edicion','editorial','carrera','autor','tipo','cantidad','internacionales.jpg','cantidad','2023-06-27')
 
 
 
