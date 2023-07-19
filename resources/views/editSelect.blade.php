@@ -21,34 +21,38 @@
             <li class="li-img"><img src="./img/add-alt.png" alt="" class="imgplus plus"><a
                     href="{{ route('main2') }}" class="a-cont efecto">Libros</a>
             </li>
-        </ul>
-    </header>
-    <form action="{{ route('setPost', $datosUs->clave_id) }}" method="POST" class="art-info">
-        @csrf
-        <p class="parrafo1">¡Bienvenido a las configuraciones de perfil!</p><br>
-        <section class="sect-info">Tu nombre de usuario tanto tus datos personales se pueden modificar en caso de algún
-            error al logearte. Modifica tu nombre: <input type="text" class="input-info"
-                value="{{ $datosUs->nombre }}" name="nombre"> apellidos:
-            <input type="text" class="input-info" value="{{ $datosUs->apellido }}" name="apellidos">. <br>
-            Tambien puedes configurar tu contacto o actualizar en caso de que sea necesario. <br><br>¡Recuerda!, solo
-            podrás
-            cambiar tu contacto un número de veces limitadas por mes.<br>
-            Número de teléfono: <input type="number" class="input-info" value="{{ $datosUs->no_telefono }}"
-                name="no_telefono"> correo: <input type="email" class="input-info" value="{{ $datosUs->correo }}"
-                name="correo">. <br> contraseña de inicio de sesion: <input type="text" name="password"
-                class="input-info" value="{{ $datosUs->contraseña }}">. <br>En caso de que necesites recordarlo, tu
-            clave id es la
-            siguiente:
-            <a>{{ $datosUs->clave_id }}</a>. <br><br>
-            Configuración de sistema.
-            <div class="div-father">Cambiar color base, modo claro/modo obscuro <div class="span">
+            <li id="element"><img src="/img/usuario.png" alt="" class="imagenUs"
+                    id="imagenUs">{{ $datosUs->clave_id }}<div class="span">
                     <div class="circulo"></div>
                 </div>
-            </div>
+
+            </li>
+        </ul>
+    </header>
+
+    <p class="parrafo1">¡Bienvenido a las configuraciones de perfil!</p>
+    <p class="parrafo1">Para guardar los cambios tienes que presionar el boton. Puedes editar tus datos las veces que
+        necesites.</p>
+
+    <div class="cont-form cont-login">
+        <form id="form-settings" action="{{ route('setPost', $datosUs->clave_id) }}" method="POST"
+            class="form-alumnos">
+            @csrf
+
+            <input class="input-alumno" type="text" class="input-info" value="{{ $datosUs->nombre }}" name="nombre">
+            <input class="input-alumno" type="text" class="input-info" value="{{ $datosUs->apellido }}"
+                name="apellidos">
+            <input class="input-alumno" type="number" class="input-info" value="{{ $datosUs->no_telefono }}"
+                name="no_telefono">
+            <input class="input-alumno" type="email" class="input-info" value="{{ $datosUs->correo }}" name="correo">
+            <input class="input-alumno" type="text" name="password" class="input-info"
+                value="{{ $datosUs->contraseña }}">
+
             <input id="colorIn" name="estado" type="text" value="{{ $datosUs->estado }}" hidden>
-        </section>
-        <div class="cont-btn-settings"><button class="btn-settings">Guardar cambios</button></div>
-    </form>
+
+            <div class="cont-btn-settings"><button class="btn-settings">Guardar cambios</button></div>
+        </form>
+    </div>
 </body>
 <script defer src="./js/settings.js"></script>
 

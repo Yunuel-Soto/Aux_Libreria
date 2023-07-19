@@ -943,17 +943,19 @@ body {
     transform: scale(0.6);
 }
 /* SETTINGS */
-.art-info {
-    font-family: serif;
-    font-size: 1.5rem;
-    text-align: start;
-    margin: 1%;
-    margin-left: 15rem;
-    margin-right: 15rem;
+
+.info-body .cont-form {
+    padding-top: 2rem;
+    color: white;
 }
+
 .parrafo1 {
+    margin-top: 2rem;
     font-size: 1.7rem;
     text-align: center;
+}
+.info-body .parrafo1:nth-child(3) {
+    margin-top: 1rem;
 }
 .input-info {
     height: 1.6rem;
@@ -962,18 +964,40 @@ body {
     padding-left: 0.5rem;
     font-size: 1rem;
 }
-.input-info:nth-child(8) {
-    width: 19rem;
-}
+
 .art-info a {
     color: #569bab;
+}
+.div-father {
+    margin-left: 10rem;
+}
+.art-info {
+    font-size: 1.7rem;
 }
 .info-body .cont-barra {
     background-color: white;
 }
 
 .info-body .nvar1 {
-    margin-left: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    /* margin-right: 3rem;
+    margin-left: 3rem; */
+}
+.info-body .nvar1:nth-child(1) {
+    font-size: 1.7rem;
+}
+#element {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    padding-top: 0.5rem;
+}
+.info-body .imagenUs {
+    height: 2.1rem;
+    margin-right: 0.5rem;
 }
 .info-body .a-cont {
     color: black;
@@ -1020,6 +1044,7 @@ body {
     color: white;
     font-size: 0.95rem;
     transition: 0.4s;
+    margin-top: 3rem;
 }
 .btn-settings:hover {
     transform: scale(1.15);
@@ -1027,6 +1052,7 @@ body {
 .btn-settings:active {
     transform: scale(1);
 }
+
 /* MENSAJES DE ALERTA */
 .alerta-errs {
     width: 40%;

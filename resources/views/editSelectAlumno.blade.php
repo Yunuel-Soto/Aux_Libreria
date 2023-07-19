@@ -23,10 +23,11 @@
             </li>
         </ul>
     </header>
+    {{-- Formulario --}}
     <form action="{{ route('setPostA', $datosUs->Matricula) }}" method="POST" class="art-info">
         @csrf
         <br><br>
-        Configuración de sistema.
+        <div class="div-father">Configuración de sistema.</div>
         <div class="div-father">Cambiar color base, modo claro/modo obscuro <div class="span">
                 <div class="circulo"></div>
             </div>
@@ -37,6 +38,6 @@
         <div class="cont-btn-settings"><button class="btn-settings">Guardar cambios</button></div>
     </form>
 </body>
-<script defer src="./js/settings.js"></script>
+<script defer src="./js/settingsA.js"></script>
 
 </html>

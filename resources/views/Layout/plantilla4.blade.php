@@ -18,12 +18,13 @@ session_start();
     <link rel="stylesheet" href="./style/style.css">
     <link rel="shortcut icon" href="./img/libro.png" />
     <script defer src="./js/app.js"></script>
+    <script defer src="./js/settings.js"></script>
     <script defer src="./js/settingsInicio.js"></script>
     <script defer src="./js/settingsALibros.js"></script>
     <script defer src="./js/settingsCLibros.js"></script>
     <script defer src="./js/settingsAlumno.js"></script>
     <script defer src="./js/settingsEditA.js"></script>
-
+    <script defer src="./js/settingsCAlumno.js"></script>
     <title>@yield('titulo_documento')</title>
 </head>
 

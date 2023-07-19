@@ -6,11 +6,6 @@ const nvar = document.querySelector(".cont-barra");
 const titulo_nvar = document.querySelector(".a-cont");
 
 const estado = document.querySelector("#colorIn");
-const element = document.querySelector("#element");
-const p = document.querySelectorAll(".parrafo1");
-const form = document.querySelector("#form-settings");
-
-const inputs = document.querySelectorAll(".input-alumno");
 
 let click = "apagado";
 
@@ -28,13 +23,7 @@ if (estado.value == "blanco") {
     nvar.style.backgroundColor = "white";
     titulo_nvar.style.color = "black";
     colorIn.value = "blanco";
-    p.forEach((index, i) => {
-        p[i].style.color = "black";
-    });
-    form.style.background = "white";
-    inputs.forEach((index, i) => {
-        inputs[i].style.border = "1px solid black";
-    });
+    body.style.color = "black";
 } else {
     span.style.paddingLeft = "1.5rem";
     click = "encendido";
@@ -45,11 +34,7 @@ if (estado.value == "blanco") {
     nvar.style.backgroundColor = "rgb(59, 59, 59)";
     titulo_nvar.style.color = "white";
     colorIn.value = "negro";
-    element.style.color = "white";
-    p.forEach((index, i) => {
-        p[i].style.color = "white";
-    });
-    form.style.background = "rgb(59, 59, 59)";
+    body.style.color = "white";
 }
 
 span.addEventListener("click", () => {
@@ -63,11 +48,7 @@ span.addEventListener("click", () => {
         nvar.style.backgroundColor = "rgb(59, 59, 59)";
         titulo_nvar.style.color = "white";
         colorIn.value = "negro";
-        element.style.color = "white";
-        p.forEach((index, i) => {
-            p[i].style.color = "white";
-        });
-        form.style.background = "rgb(59, 59, 59)";
+        body.style.color = "white";
     } else {
         span.style.paddingLeft = "0%";
         click = "apagado";
@@ -78,13 +59,6 @@ span.addEventListener("click", () => {
         nvar.style.backgroundColor = "white";
         titulo_nvar.style.color = "black";
         colorIn.value = "blanco";
-        element.style.color = "black";
-        p.forEach((index, i) => {
-            p[i].style.color = "black";
-        });
-        form.style.background = "white";
-        inputs.forEach((index, i) => {
-            inputs[i].style.border = "1px solid black";
-        });
+        body.style.color = "black";
     }
 });
