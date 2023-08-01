@@ -1,0 +1,70 @@
+/* Open aplication */
+
+@media screen and (max-width: 1533px) {
+    .botones {
+        top: 76%;
+    }
+    .anclas {
+        top: 83%;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .body-cont {
+        background-size: 144%;
+        background-position-x: 35%;
+    }
+    .botones {
+        top: 85%;
+    }
+    .anclas {
+        top: 93%;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .body-cont {
+        background-size: 180%;
+        background-position-x: 35%;
+        height: 100%;
+    }
+    .botones {
+        top: 76%;
+    }
+    .anclas {
+        top: 83%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .body-cont {
+        background-size: 240%;
+        /* background-position-x: 25%; */
+    }
+    .botones {
+        top: 76%;
+        margin-left: 15%;
+    }
+    .anclas {
+        top: 83%;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 471px) {
+    .body-cont {
+        background-size: 300%;
+        background-position-x: 30%;
+    }
+    .botones {
+        top: 76%;
+        margin-left: 5%;
+    }
+    .anclas {
+        top: 83%;
+        margin-left: 5%;
+    }
+    .botones button {
+        width: 150px;
+    }
+}

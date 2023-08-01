@@ -26,6 +26,9 @@ session_start();
     <script defer src="./js/settingsEditA.js"></script>
     <script defer src="./js/settingsCAlumno.js"></script>
     <title>@yield('titulo_documento')</title>
+
+    <link rel="stylesheet" href="./style/responsive.css">
+
 </head>
 
 {{-- PARA EL CONTENIDO EN GENERAL (ADMINS) --}}

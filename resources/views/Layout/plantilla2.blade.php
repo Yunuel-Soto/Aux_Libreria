@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="shortcut icon" href="./img/libro.png" />
 
+    <link rel="stylesheet" href="./style/responsive.css">
+
     <title>@yield('titulo_documento')</title>
 </head>
 

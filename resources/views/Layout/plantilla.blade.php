@@ -23,6 +23,8 @@ session_start();
     <script defer src="./js/settingsCLibros.js"></script>
     <script defer src="./js/settingsAlumno.js"></script>
 
+    <link rel="stylesheet" href="./style/responsive.css">
+
     <link rel="shortcut icon" href="./img/libro.png" />
     <title>@yield('titulo_documento')</title>
 </head>

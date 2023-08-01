@@ -1,3 +1,6 @@
+/*
+    PARA LA FUNCIONALIDAD DEL CARRUSEL
+*/
 const grande = document.querySelector(".grande");
 const punto = document.querySelectorAll(".punto");
 const imgc = document.querySelectorAll(".img-c");

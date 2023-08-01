@@ -150,35 +150,44 @@ a:hover {
 
 /* Registrate Welcome*/
 
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(28, 50, 56);
+}
+
 .body-cont {
     background-image: url("/img/Welcome.png");
     background-repeat: no-repeat;
-    /* background-size: 89%; */
-    height: 710px;
-    background-position: 106%;
+    /* /* width: 100%; */
+    height: 100%;
+    background-size: 100%;
+    background-position-y: 50%;
 }
-.body {
-    /* background-color: rgb(23, 129, 155); */
-    background-color: rgb(28, 50, 56);
-}
+
 .img-open {
     width: 80%;
     margin-left: 20%;
 }
 .botones {
-    padding-top: 37%;
-    margin-left: 29%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding-right: 30%;
+    width: 100%;
+    top: 82%;
 }
 .registrate {
-    margin-right: 3%;
     height: 45px;
-    padding: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding: 10px;
     border-radius: 10px;
     border: 0;
-    width: 20%;
+    width: 200px;
 }
+.registrate:last-child {
+    margin-left: 2rem;
+}
+
 .registrate:hover {
     box-shadow: 0 0 20px rgb(1, 37, 115);
 }
@@ -187,15 +196,24 @@ a:hover {
     box-shadow: none;
 }
 .anclas {
-    margin-left: 33.2%;
-    margin-top: 0.5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding-right: 30%;
+    width: 100%;
+    top: 89%;
 }
 .logeate {
     font-size: 19px;
     color: white;
 }
+
 .logeate:first-child {
-    margin-right: 16.5%;
+    margin-left: 2rem;
+}
+
+.anclas a:last-child {
+    margin-left: 9rem;
 }
 /* Form Alumnos (SingIn) */
 
@@ -209,7 +227,6 @@ a:hover {
     justify-content: center;
     color: rgb(255, 255, 255);
     align-items: center;
-    height: 100%;
     padding-top: 2.5rem;
 }
 .form-alumnos {
